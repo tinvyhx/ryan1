@@ -1,10 +1,13 @@
 PODS:
+  - MJRefresh (3.0.4)
   - UMengSocial (4.3)
 
 DEPENDENCIES:
+  - MJRefresh
   - UMengSocial (~> 4.3)
 
 SPEC CHECKSUMS:
+  MJRefresh: c95f0d541606ef584dab3fbeda28f4f32b4aca6e
   UMengSocial: e649f30dd9a3686c74daba880e83f818f66bd890
 
 COCOAPODS: 0.39.0
