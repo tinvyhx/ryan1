@@ -33,7 +33,8 @@ class WebViewController: BaseViewController , UIWebViewDelegate {
     }
     
     func loadWeb(){
-        web_address = APP_Http + web_address
+        let web_params = "?device=ios&version=" + (App_Version as! String)
+        web_address = APP_Http + web_address + web_params
         web_view.loadRequest(NSURLRequest(URL: NSURL(string: web_address)!))
         web_view.delegate=self
         web_view.scrollView.mj_header = MJRefreshNormalHeader(refreshingBlock: {() in
