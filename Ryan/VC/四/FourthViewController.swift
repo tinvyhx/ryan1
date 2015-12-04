@@ -25,7 +25,7 @@ class FourthViewController: BaseViewController,UMSocialUIDelegate {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        UMSocialSnsService.presentSnsController(self, appKey: UMeng_KEY, shareText: "hello", shareImage: UIImage(named: "tab_1"), shareToSnsNames: [UMShareToSms,UMShareToEmail], delegate: self)
+        UMSocialSnsService.presentSnsController(self, appKey: UMeng_KEY, shareText: "hello", shareImage: UIImage(named: "tab_1"), shareToSnsNames: [UMShareToSms,UMShareToEmail,UMShareToQQ,UMShareToQzone,UMShareToWechatSession,UMShareToWechatTimeline], delegate: self)
         
         self.tabBarController?.selectedIndex=0
     }
